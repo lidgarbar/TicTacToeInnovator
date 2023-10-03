@@ -1,0 +1,279 @@
+GHCi, version 8.6.5: http://www.haskell.org/ghc/  :? for help
+[1 of 3] Compiling ColaConListas    ( ColaConListas.hs, interpreted )
+[2 of 3] Compiling TablerosMovimientos ( TablerosMovimientos.hs, interpreted )
+
+TablerosMovimientos.hs:129:1: warning:
+    Pattern match checker exceeded (2000000) iterations in
+    an equation for `tableroLleno'. (Use -fmax-pmcheck-iterations=n
+    to set the maximun number of iterations to n)
+    |
+129 | tableroLleno [] = False
+    | ^^^^^^^^^^^^^^^^^^^^^^^^...
+[3 of 3] Compiling Main             ( C:\\Users\lidia\OneDrive\Escritorio\Uni\Tercero año TI\Pirmer Cuatri\PD\Mini Proyecto\mini-proyecto\tres_en_raya.hs, interpreted )
+Ok, three modules loaded.
+*Main> main
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bienvenido a nuestro miniproyecto!
+
+Para hacer un movimiento, simplemente escribe 'LN' la L representa una letra mayuscula y será la columna mientras que la N es un numero del 0 al 9 y representará la fila.
+
+Si quieres dejar de jugar puedes escribir 'salir'.
+
+¿Quieres jugar? (s):
+s
+
+    A     B     C
+
+0  [ ] | [ ] | [ ]
+   ----+-----+----
+1  [ ] | [ ] | [ ]
+   ----+-----+----
+2  [ ] | [ ] | [ ]
+
+Jugador [X], porfavor introduzca un movimiento:
+B0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    A     B     C
+
+0  [ ] | [X] | [ ]
+   ----+-----+----
+1  [ ] | [ ] | [ ]
+   ----+-----+----
+2  [ ] | [ ] | [ ]
+
+Jugador [O], porfavor introduzca un movimiento:
+B0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fuera de los limites! / Un jugador ya ha cogiddo esa posición!
+Introduzca otro movimiento.
+
+    A     B     C
+
+0  [ ] | [X] | [ ]
+   ----+-----+----
+1  [ ] | [ ] | [ ]
+   ----+-----+----
+2  [ ] | [ ] | [ ]
+
+Jugador [O], porfavor introduzca un movimiento:
+A3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fuera de los limites! / Un jugador ya ha cogiddo esa posición!
+Introduzca otro movimiento.
+
+    A     B     C
+
+0  [ ] | [X] | [ ]
+   ----+-----+----
+1  [ ] | [ ] | [ ]
+   ----+-----+----
+2  [ ] | [ ] | [ ]
+
+Jugador [O], porfavor introduzca un movimiento:
+XX
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Movimiento erroneo.
+Porfavor introduzca un movimiento valido del tipo LN.
+
+    A     B     C
+
+0  [ ] | [X] | [ ]
+   ----+-----+----
+1  [ ] | [ ] | [ ]
+   ----+-----+----
+2  [ ] | [ ] | [ ]
+
+Jugador [O], porfavor introduzca un movimiento:
+99
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Movimiento erroneo.
+Porfavor introduzca un movimiento valido del tipo LN.
+
+    A     B     C
+
+0  [ ] | [X] | [ ]
+   ----+-----+----
+1  [ ] | [ ] | [ ]
+   ----+-----+----
+2  [ ] | [ ] | [ ]
+
+Jugador [O], porfavor introduzca un movimiento:
+LN
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Movimiento erroneo.
+Porfavor introduzca un movimiento valido del tipo LN.
+
+    A     B     C
+
+0  [ ] | [X] | [ ]
+   ----+-----+----
+1  [ ] | [ ] | [ ]
+   ----+-----+----
+2  [ ] | [ ] | [ ]
+
+Jugador [O], porfavor introduzca un movimiento:
+salir
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*Main>

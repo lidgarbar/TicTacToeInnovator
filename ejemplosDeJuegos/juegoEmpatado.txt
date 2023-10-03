@@ -1,0 +1,441 @@
+En este ejemplo tambien usamos retomar para empatar el juego.
+
+GHCi, version 8.6.5: http://www.haskell.org/ghc/  :? for help
+[1 of 3] Compiling ColaConListas    ( ColaConListas.hs, interpreted )
+[2 of 3] Compiling TablerosMovimientos ( TablerosMovimientos.hs, interpreted )
+
+TablerosMovimientos.hs:129:1: warning:
+    Pattern match checker exceeded (2000000) iterations in
+    an equation for `tableroLleno'. (Use -fmax-pmcheck-iterations=n
+    to set the maximun number of iterations to n)
+    |
+129 | tableroLleno [] = False
+    | ^^^^^^^^^^^^^^^^^^^^^^^^...
+[3 of 3] Compiling Main             ( C:\\Users\G531GW\OneDrive\Escritorio\Estudios\3 año ingenieria\PD\mini-proyecto\tres_en_raya.hs, interpreted )
+Ok, three modules loaded.
+*Main> main
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bienvenido a nuestro miniproyecto!
+
+Para hacer un movimiento, simplemente escribe 'LN' la L representa una letra mayuscula y será la columna mientras que la N es un numero del 0 al 9 y representará la fila.
+
+Si quieres dejar de jugar puedes escribir 'salir'.
+
+¿Quieres jugar? (s):
+s
+
+    A     B     C
+
+0  [ ] | [ ] | [ ]
+   ----+-----+----
+1  [ ] | [ ] | [ ]
+   ----+-----+----
+2  [ ] | [ ] | [ ]
+
+Jugador [X], porfavor introduzca un movimiento: 
+A0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    A     B     C
+
+0  [X] | [ ] | [ ]
+   ----+-----+----
+1  [ ] | [ ] | [ ]
+   ----+-----+----
+2  [ ] | [ ] | [ ]
+
+Jugador [O], porfavor introduzca un movimiento: 
+B0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    A     B     C
+
+0  [X] | [O] | [ ]
+   ----+-----+----
+1  [ ] | [ ] | [ ]
+   ----+-----+----
+2  [ ] | [ ] | [ ]
+
+Jugador [X], porfavor introduzca un movimiento: 
+C0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    A     B     C
+
+0  [X] | [O] | [X]
+   ----+-----+----
+1  [ ] | [ ] | [ ]
+   ----+-----+----
+2  [ ] | [ ] | [ ]
+
+Jugador [O], porfavor introduzca un movimiento: 
+B1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    A     B     C
+
+0  [X] | [O] | [X]
+   ----+-----+----
+1  [ ] | [O] | [ ]
+   ----+-----+----
+2  [ ] | [ ] | [ ]
+
+Jugador [X], porfavor introduzca un movimiento: 
+B2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    A     B     C
+
+0  [X] | [O] | [X]
+   ----+-----+----
+1  [ ] | [O] | [ ]
+   ----+-----+----
+2  [ ] | [X] | [ ]
+
+Jugador [O], porfavor introduzca un movimiento: 
+A1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    A     B     C
+
+0  [X] | [O] | [X]
+   ----+-----+----
+1  [O] | [O] | [ ]
+   ----+-----+----
+2  [ ] | [X] | [ ]
+
+Jugador [X], porfavor introduzca un movimiento: 
+C1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    A     B     C
+
+0  [X] | [O] | [X]
+   ----+-----+----
+1  [O] | [O] | [X]
+   ----+-----+----
+2  [ ] | [X] | [ ]
+
+Jugador [O], porfavor introduzca un movimiento: 
+A2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    A     B     C
+
+0  [X] | [O] | [X]
+   ----+-----+----
+1  [O] | [O] | [X]
+   ----+-----+----
+2  [O] | [X] | [ ]
+
+Jugador [X], porfavor introduzca un movimiento: 
+C2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    A     B     C
+
+0  [X] | [O] | [X]
+   ----+-----+----
+1  [O] | [O] | [X]
+   ----+-----+----
+2  [O] | [X] | [X]
+Jugador [X] es el ganador!
+¿Quieres iniciar otro juego, ver el historial de la partida o retomarla en algun punto ? (s/n/ver/retomar)
+retomar
+
+Movimiento 1, Jugador X: A0
+Movimiento 2, Jugador O: B0
+Movimiento 3, Jugador X: C0
+Movimiento 4, Jugador O: B1
+Movimiento 5, Jugador X: B2
+Movimiento 6, Jugador O: A1
+Movimiento 7, Jugador X: C1
+Movimiento 8, Jugador O: A2
+Movimiento 9, Jugador X: C2
+Indique desde que movimiento quiere retomarlo, escriba el numero de dicho movimiento
+7
+
+    A     B     C
+
+0  [X] | [O] | [X]
+   ----+-----+----
+1  [O] | [O] | [X]
+   ----+-----+----
+2  [ ] | [X] | [ ]
+
+Jugador [O], porfavor introduzca un movimiento: 
+C2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    A     B     C
+
+0  [X] | [O] | [X]
+   ----+-----+----
+1  [O] | [O] | [X]
+   ----+-----+----
+2  [ ] | [X] | [O]
+
+Jugador [X], porfavor introduzca un movimiento: 
+A2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    A     B     C
+
+0  [X] | [O] | [X]
+   ----+-----+----
+1  [O] | [O] | [X]
+   ----+-----+----
+2  [X] | [X] | [O]
+Empate!
+¿Quieres iniciar otro juego, ver el historial de la partida o retomarla en algun punto ? (s/n/ver/retomar)
+ver
+
+Movimiento 1, Jugador X: A0
+Movimiento 2, Jugador O: B0
+Movimiento 3, Jugador X: C0
+Movimiento 4, Jugador O: B1
+Movimiento 5, Jugador X: B2
+Movimiento 6, Jugador O: A1
+Movimiento 7, Jugador X: C1
+Movimiento 8, Jugador O: C2
+Movimiento 9, Jugador X: A2
+¿Quieres iniciar otro juego, ver el historial de la partida o retomarla en algun punto ? (s/n/ver/retomar)
